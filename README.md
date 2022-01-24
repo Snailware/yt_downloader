@@ -78,17 +78,27 @@ Before installing, ensure all software is up to date.
 ### Installation
 
 1. Clone the repo.
+
     ```sh
     git clone https://github.com/Snailware/yt_downloader.git
     ```
-2. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp).
+
+2. Make `downloader.sh` executable.
+
+    ```sh
+    sudo chmod +x ~/yt_downloader/downloader.sh
+    ```
+
+3. Install [yt-dlp](https://github.com/yt-dlp/yt-dlp).
+
     ```sh
     sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
     sudo chmod a+rx /usr/local/bin/yt-dlp
     ```
-3. Add playlist URL(s) to the `urls` file.
 
-4. Schedule downloader using `cron`.
+4. Add playlist URL(s) to the `urls` file.
+
+5. Schedule downloader using `cron`.
 
     - Open cron file for editing.
         ```sh
@@ -97,7 +107,7 @@ Before installing, ensure all software is up to date.
     - Append the following to your cron file to schedule downloader for 4am every day.
 
         ```sh
-        0 4 * * * ~/yt_downloader/downloader.sh
+        0 4 * * * ~/yt_downloader/downloader.sh > /dev/null
         ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -139,7 +149,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the GPL-3.0 License. See [LICENSE](https://github.com/Snailware/yt_downloader/blob/master/LICENSE) for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
