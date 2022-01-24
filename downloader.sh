@@ -1,0 +1,13 @@
+yt-dlp \
+--ignore-config \
+--yes-playlist \
+--extract-audio \
+--audio-format mp3 \
+--audio-quality 0 \
+--embed-thumbnail \
+--embed-metadata \
+--restrict-filenames \
+--ignore-errors \
+--batch-file ~/yt_downloader/urls \
+--output '~/Music/%(playlist)s/%(title)s.%(ext)s' \
+--download-archive ~/yt_downloader/archive
