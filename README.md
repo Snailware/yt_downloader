@@ -56,7 +56,7 @@ excess network traffic isnt introduced during regular use hours.
 
 ### Built With
 
--   [ubuntu](https://ubuntu.com/)
+-   [Ubuntu](https://ubuntu.com/)
 -   [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
